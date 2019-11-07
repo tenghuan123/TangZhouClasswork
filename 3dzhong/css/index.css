@@ -1,0 +1,179 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+body,html{
+  background:black;
+  height: 100%;
+  position: relative;
+}
+.container {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  perspective: 3000px;
+  transform-style: preserve-3d;
+}
+
+.zhong {
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  transform: rotate3d(-2, 1, 1, -55deg);
+  transition: all 3s ease;
+}
+.zhong:hover{
+  transform: rotate3d(1, 1, 1, 0deg);
+}
+
+.zhongbase {
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transform-style: preserve-3d;
+  animation: circle1 20s linear infinite;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  background: linear-gradient(to right, white 0,white 5%, transparent 0,transparent 95%,white 0,white 100%);
+}
+.ring {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+}
+.ring.One{
+  height: 80%;
+  width: 80%;
+  border: 10px solid rgb(155,187,199);
+  animation: circle2 16s linear infinite;
+  transform: translateZ(150px);
+}
+.ring.Two{
+  height: 50%;
+  width: 50%;
+  border: 10px solid rgb(154,91,90);
+  animation: circle3 20s linear infinite;
+  transform: translateZ(50px);
+}
+.ringChil{
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-radius: 50%;
+}
+.ring.One .ringChil{
+  border-color: rgb(155,187,199);
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-width: 20px;
+  margin: -20px;
+}
+.ring.Two .ringChil{
+  border-color: rgb(154,91,90);
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-width: 20px;
+  margin: -20px;
+}
+.fu{
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  margin: auto;
+  bottom: 0px;
+  border-style: solid;
+}
+.fu.One {
+  width: 25%;
+  height: 25%;
+  border-color: #fff;
+  border-bottom-color: transparent;
+  animation: circle4 5s linear infinite;
+  transform: translateZ(-70px);
+}
+.fu.two {
+  width: 10%;
+  height: 10%;
+  border-color: red;
+  border-bottom-color: transparent;
+  animation: circle5 2s linear infinite;
+  transform: translateZ(-70px);
+}
+.fu.three {
+  width: 20%;
+  height: 20%;
+  border-color: rgb(163, 163, 123);
+  border-bottom-color: transparent;
+  animation: circle6 2s linear infinite;
+  transform: translateZ(70px);
+}
+@keyframes circle1{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform:rotate(360deg);
+  }
+}
+@keyframes circle2{
+  0%{
+      transform: rotate(0deg) translateZ(150px);
+  }
+  100%{
+      transform:rotate(-360deg) translateZ(150px);
+  }
+}
+@keyframes circle3{
+  0%{
+      transform: rotate(30deg) translateZ(50px);
+  }
+  100%{
+      transform:rotate(-330deg) translateZ(50px);
+  }
+}
+@keyframes circle4{
+  0%{
+      transform: rotate(90deg) translateZ(-70px);
+  }
+  100%{
+      transform:rotate(-270deg) translateZ(-70px);
+  }
+}
+@keyframes circle5{
+  0%{
+      transform: rotate(-270deg) translateZ(-70px);
+  }
+  100%{
+      transform:rotate(90deg) translateZ(-70px);
+  }
+}
+@keyframes circle6{
+  0%{
+      transform: rotate(-180deg) translateZ(70px);
+  }
+  100%{
+      transform:rotate(180deg) translateZ(70px);
+  }
+}
