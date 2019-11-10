@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.globalNav {
+    background: #f5f5f5;
+}
+
+.headerContainer {
+    margin: 0 auto;
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.headerIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    margin-right: 50px;
+}
+
+img {
+    width: 20px;
+}
+
+.headerIcon span {
+    color: #706D6E;
+    margin-left: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #B07C66;
+}
+
+.headerSpan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    margin: 0 30px;
+}
+
+.headerRight {
+    display: flex;
+    flex: 1 0 560px;
+    justify-content: flex-end;
+}
+
+.headerSearch {
+    border: 1px solid #707070;
+    padding: 5px 0px;
+    flex: 0 0 460px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.headerSearch input[type="text"] {
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: #f5f5f5;
+}
+.shopcat i {
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.shopcat i:hover{
+    color: #0078D7;
+}
+
+.shopcat {
+    line-height: 34px;
+}
+
+.login {
+    line-height: 34px;
+    cursor: pointer;
+}
+.login span{
+    transition: all 0.4s ease;
+}
+.login span:hover{
+    color:#007ACC;
+}
+.login span i{
+    font-size: 8px;
+    margin-left: 5px;
+}
+.headerMain {
+    min-width: 600px;
+    justify-content: space-between;
+    display: flex;
+}
+.headerSearch i.icon.iconfont {
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.headerSearch i.icon.iconfont:hover {
+    color: #007ACC;
+}
+.Headerjieshao {
+    margin-right: 50px;
+}
+
+.HeaderNav {flex: 1 1 auto;margin: 0 30px;}
+
+.HeaderNav ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.globalHeader {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.Headerjieshao a {
+    color: #000;
+}
+.globalHeader .headerContainer {
+    padding: 25px 0px;
+}
+
+nav {
+    display: flex;
+    width: 500px;
+}
+
+.HeaderNav a {
+    color: #0067b8;
+}
