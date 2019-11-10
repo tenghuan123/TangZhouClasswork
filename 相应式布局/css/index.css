@@ -10,6 +10,10 @@ a{
   text-decoration: none;
   color: #fff;
   font-weight: 600;
+  transition: all 0.4s ease;
+}
+a:hover{
+  color: hsla(0,0%,100%,.7);
 }
 header {
   background: #000;
@@ -23,9 +27,15 @@ header {
   flex: 1 1 auto;
   padding-left: 12px;
 }
+.navText.two {
+  display: none;
+}
 
 .rightIcon {
-  background: #fff;
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .userRole {
@@ -36,13 +46,27 @@ header {
 .userRole i{
   color: #fff;
   font-size: 36px;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
+.userRole i:hover {
+  color: hsla(0,0%,100%,.7);
+}
+
 input[type="text"] {
   height: 50%;
+  width: 160px;
   background: #3f4448;
   border: none;
   padding: 5px 25px 5px 10px;
   border-radius: 2px;
+  outline: none;
+  transition: all 0.4s ease;
+}
+input[type="text"]:focus{
+  width: 230px;
+  background: #fff;
+  color: #3f4448;
 }
 
 label {
@@ -59,6 +83,65 @@ nav {
 ul {
   display: flex;
 }
-li {
+nav ul li {
   margin-right: 20px;
+}
+nav ul li:last-child{
+  margin-right: 0px;
+}
+summary i {
+  color: #fff;
+}
+
+summary {
+  list-style: none;
+  font-size: 0;
+}
+
+details {
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.rightIcon li {
+  margin: 0px 10px;
+}
+summary i.icon.iconfont {
+  line-height: 22px;
+}
+details-menu {
+  position: absolute;
+  border: 1px solid;
+  padding: 10px 10px;
+  background: #fff;
+  top: 140%;
+  left: -140px;
+  width: 160px;
+  border-radius: 5px;
+}
+details-menu::before{
+  content: '';
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent #fff transparent;
+  display: block;
+  position: absolute;
+  top: -18px;
+  right: 23px;
+}
+details-menu a {
+  color: #24292e;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 14px;
+}
+summary img {
+  width: 21.6px;
+  height: 21.6px;
+  border-radius: 2px;
 }

@@ -7,15 +7,66 @@
   <title>Document</title>
   <link rel="stylesheet" href="./font_eobv2yria6m/iconfont.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link type="text/css" rel="stylesheet" href="./css/demo.css" media="only screen and (max-width:1024px)"/>
 </head>
 <body>
   <header>
+    <div class="navText two">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"></path></svg>
+          <label>
+              <input type="text" placeholder="Search or jump to…" />
+            </label>
+            <nav>
+                <ul>
+                  <li><a href="#">Pull requests</a></li>
+                  <li><a href="#">Issues</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">Marketplace</a></li>
+                  <li>
+                      <details>
+                        <summary><i class="icon iconfont">&#xe61c;</i></summary>
+                        <details-menu>
+                          <a href="#">
+                            New repository</a>
+                          <a href="#">
+                            Import repository
+                          </a>
+                          <a href="#">
+                            New gist</a>
+                          <a href="#">
+                            New organization
+                          </a>
+                        </details-menu>
+                      </details>
+                    </li>
+                    <li>
+                      <details>
+                        <summary>
+                          <img src="./image/me.jpg" alt="头像" />
+                        </summary>
+                        <details-menu>
+                          <a href="#">
+                            Your profile</a>
+                          <a href="#">
+                            Your repositories
+                          </a>
+                          <a href="#">
+                            Your projects</a>
+                          <a href="#">
+                            Your stars
+                          </a>
+                        </details-menu>
+                      </details>
+                    </li>
+                </ul>
+              </nav>
+      </div>
     <div class="userRole">
       <i class="icon iconfont">&#xe709;</i>
     </div>
     <div class="navText">
         <label>
-            <input type="text" placeholder="Plaese into your key codes" />
+            <input type="text" placeholder="Search or jump to…" />
           </label>
           <nav>
               <ul>
@@ -32,13 +83,37 @@
         <li>
           <details>
             <summary><i class="icon iconfont">&#xe61c;</i></summary>
-            This document teaches you everything you have to learn about HTML 5.
+            <details-menu>
+              <a href="#">
+                New repository</a>
+              <a href="#">
+                Import repository
+              </a>
+              <a href="#">
+                New gist</a>
+              <a href="#">
+                New organization
+              </a>
+            </details-menu>
           </details>
         </li>
         <li>
           <details>
-            <summary>HTML 5</summary>
-            This document teaches you everything you have to learn about HTML 5.
+            <summary>
+              <img src="./image/me.jpg" alt="头像" />
+            </summary>
+            <details-menu>
+              <a href="#">
+                Your profile</a>
+              <a href="#">
+                Your repositories
+              </a>
+              <a href="#">
+                Your projects</a>
+              <a href="#">
+                Your stars
+              </a>
+            </details-menu>
           </details>
         </li>
       </ul>

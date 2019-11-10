@@ -1,0 +1,33 @@
+.rightIcon ul li:nth-child(2){
+    display: none;
+}
+.rightIcon ul li:nth-child(3){
+    display: none;
+}
+.navText{
+    display: none;
+}
+.navText.two {
+    display: flex;
+    flex: 0 0 36px;
+    padding: 0;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.navText.two label {
+    display: none;
+}
+
+.navText.two nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    display: none;
+}
+
+svg.octicon.octicon-three-bars {
+    color: #fff;
+    stroke: #fff;
+}
