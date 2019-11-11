@@ -1,8 +1,10 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     list-style: none;
 }
+
+/* å¤´éƒ¨éƒ¨åˆ†å¼€å§‹ */
 .globalNav {
     background: #f5f5f5;
 }
@@ -23,7 +25,7 @@
     margin-right: 50px;
 }
 
-img {
+.headerIcon img {
     width: 20px;
 }
 
@@ -66,13 +68,15 @@ a {
     border: none;
     background: #f5f5f5;
 }
+
 .shopcat i {
     font-size: 18px;
     font-weight: 600;
     transition: all 0.4s ease;
     cursor: pointer;
 }
-.shopcat i:hover{
+
+.shopcat i:hover {
     color: #0078D7;
 }
 
@@ -84,40 +88,80 @@ a {
     line-height: 34px;
     cursor: pointer;
 }
-.login span{
+
+.login span {
     transition: all 0.4s ease;
 }
-.login span:hover{
-    color:#007ACC;
+
+.login span:hover {
+    color: #007ACC;
 }
-.login span i{
+
+.login span i {
     font-size: 8px;
     margin-left: 5px;
 }
+
 .headerMain {
     min-width: 600px;
     justify-content: space-between;
     display: flex;
 }
+
 .headerSearch i.icon.iconfont {
     font-size: 18px;
     line-height: 21px;
     cursor: pointer;
     transition: all 0.4s ease;
 }
+
 .headerSearch i.icon.iconfont:hover {
     color: #007ACC;
 }
+
 .Headerjieshao {
     margin-right: 50px;
 }
 
-.HeaderNav {flex: 1 1 auto;margin: 0 30px;}
+.HeaderNav {
+    flex: 1 1 auto;
+    margin: 0 30px;
+}
 
 .HeaderNav ul {
     display: flex;
     flex: 1;
     justify-content: space-between;
+}
+
+.HeaderNav ul li {
+    position: relative;
+}
+
+.HeaderNav>nav>ul>li:nth-child(1)::before {
+    content: 'æ–°å“';
+    width: 30px;
+    height: 20px;
+    background: #E71224;
+    position: absolute;
+    font-size: 8px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    z-index: 3;
+    top: -20px;
+    right: -30px;
+}
+
+.HeaderNav>nav>ul>li:nth-child(1)::after {
+    content: '';
+    border-style: solid;
+    border-width: 8px;
+    border-color: transparent #E71224 transparent transparent;
+    position: absolute;
+    top: -13px;
+    right: -15px;
+    transform: rotate(55deg);
 }
 
 .globalHeader {
@@ -127,6 +171,7 @@ a {
 .Headerjieshao a {
     color: #000;
 }
+
 .globalHeader .headerContainer {
     padding: 25px 0px;
 }
@@ -139,3 +184,143 @@ nav {
 .HeaderNav a {
     color: #0067b8;
 }
+
+ul.headercloums {
+    flex-direction: column;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    left: -35px;
+    top: 45px;
+    display: none;
+}
+
+ul.headercloums li {
+    width: 200px;
+    padding: 25px;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+ul.headercloums li:hover {
+    background: #E4F0F9;
+}
+
+ul.headercloums li:hover a {
+    text-decoration: underline;
+}
+
+/* å¤´éƒ¨éƒ¨åˆ†ç»“æŸ */
+
+
+/* ä¸»ä½“éƒ¨åˆ†å¼€å§‹ */
+.mainContainer {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.root span a {
+    font-size: 12px;
+    color: #515151;
+    font-family: sans-serif;
+    display: inline-block;
+}
+
+.root span {
+    font-size: 12px;
+    padding: 0px 5px;
+}
+
+.lunbo img {
+    width: 100%;
+}
+
+.root {
+    padding: 5px 0px;
+}
+
+.oneBox {
+    position: absolute;
+    top: 15%;
+    left: 16%;
+}
+
+.oneBox h3 {
+    font-size: 36px;
+}
+
+.oneBox h3 span {
+    display: block;
+    font-size: 16px;
+    width: 110px;
+    background: #e71224;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0px;
+    font-weight: 400;
+}
+
+.oneBox p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.oneBoxBtn {
+    margin-top: 75px;
+}
+
+.oneBoxBtn p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.oneBoxBtn p span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.oneBoxBtn button {
+    border: none;
+    padding: 15px 35px;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+}
+
+.twoBox {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    top: 50px;
+    bottom: 0px;
+    text-align: center;
+}
+
+.Boxheader h3 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.twoBox .oneBoxBtn {
+    margin: 250px;
+}
+
+.Boxheader p {
+    font-size: 18px;
+}
+
+/* .lunboçš„åˆ†é¡µå™¨ */
+.swiper-container {
+    --swiper-theme-color: #ff6600;
+    --swiper-pagination-color: #00ff33;
+    /* ä¸¤ç§éƒ½å¯ä»¥ */
+}
+.swiper-container{
+    --swiper-theme-color: #ff6600;/* 设置Swiper风格 */
+    --swiper-navigation-color: #00ff33;/* 单独设置按钮颜色 */
+    --swiper-navigation-size: 30px;/* 设置按钮大小 */
+  }

@@ -8,6 +8,10 @@
     <link rel="shortcut icon" type="image/x-icon"
         href="https://imgazure.microsoftstore.com.cn/_ui/desktop/theme-light/img/favicon.ico">
     <title>项目实战微软</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <script src="https://unpkg.com/swiper/js/swiper.js"> </script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
     <link rel="stylesheet" href="./font_3pzdnkfm1r6/iconfont.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -52,8 +56,25 @@
                 <div class="HeaderNav">
                     <nav>
                         <ul>
-                            <li><a href="#">硬件</a></li>
-                            <li><a href="#">软件</a></li>
+                            <li><a href="#">硬件</a>
+                                <ul class="headercloums">
+                                    <li><a href="#">Surface</a></li>
+                                    <li><a href="#">Xbox+游戏</a></li>
+                                    <li><a href="#">电脑与平板</a></li>
+                                    <li><a href="#">混合现实</a></li>
+                                    <li><a href="#">配件</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">软件</a>
+                                <ul class="headercloums">
+                                    <li><a href="#">Office</a></li>
+                                    <li><a href="#">Windows</a></li>
+                                    <li><a href="#">Apps and Windows 10 游戏</a></li>
+                                    <li><a href="#">Visual Studio</a></li>
+                                    <li><a href="#">Microsoft Complete</a></li>
+                                    <li><a href="#">其他软件与服务</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#">商务</a></li>
                             <li><a href="#">教育</a></li>
                             <li><a href="#">以旧换新</a></li>
@@ -64,8 +85,74 @@
             </div>
         </div>
     </header>
-    <main></main>
+    <main>
+        <section class="mainContainer">
+            <div class="Global_Crumbs">
+                <div class="root">
+                    <span><a href="#">微软官方商城</a></span>><span><a href="#">Xbox+游戏</a></span>
+                </div>
+            </div>
+            <div class="lunbo">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./image/ia_100000003.jpg" alt="">
+                            <div class="oneBox">
+                                <h3><span>24期免息</span>
+                                    Xbox One X 1TB 超时空特别版
+                                </h3>
+                                <p>选增品套餐，得Xbox雨伞（官方授权1周边，限量80个）</p>
+                                <p>在享招行信用卡24期免息</p>
+                                <div class="oneBoxBtn">
+                                    <p>优惠价：￥2,989.00</p>
+                                    <p>月供约<span>￥124.55/月</span></p>
+                                    <button>立即购买</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/ia_100000004.jpg" alt="">
+                            <div class="oneBox">
+                                <h3><span>24期免息</span>
+                                    Xbox One S 1TB 双手柄套装
+                                </h3>
+                                <p>在享招行信用卡24期免息</p>
+                                <p>限时加赠apex Legends 创始者包兑换码</p>
+                                <div class="oneBoxBtn">
+                                    <p>优惠价：￥1,889.00</p>
+                                    <p>月供约<span>￥78.71/月</span></p>
+                                    <button>立即购买</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/ia_100000005.jpg" alt="">
+                            <div class="twoBox">
+                                <div class="Boxheader">
+                                    <h3>精彩由你掌握</h3>
+                                    <p>Xbox无线控制器，每个色彩都精彩</p>
+                                </div>
+                                <div class="oneBoxBtn">
+                                    <p><span>￥339,99</span>起</p>
+                                    <button>立即购买</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <img src="./image/ia_100000006.jpg" alt="">
+                        </div> -->
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+                    <div class="swiper-button-next"></div>
+                    <!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
+    <script src="./js/Myswiper.js"></script>
 </body>
 
 </html>
