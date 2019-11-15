@@ -4,7 +4,7 @@
     list-style: none;
 }
 
-/* å¤´éƒ¨éƒ¨åˆ†å¼€å§‹ */
+/* ÃƒÂ¥Ã‚Â¤Ã‚Â´ÃƒÂ©Ã†â€™Ã‚Â¨ÃƒÂ©Ã†â€™Ã‚Â¨ÃƒÂ¥Ã‹â€ Ã¢â‚¬Â ÃƒÂ¥Ã‚Â¼Ã¢â€šÂ¬ÃƒÂ¥Ã‚Â§Ã¢â‚¬Â¹ */
 .globalNav {
     background: #f5f5f5;
 }
@@ -12,7 +12,7 @@
 .headerContainer {
     margin: 0 auto;
     display: flex;
-    width: 85%;
+    max-width: 1280px;
     justify-content: space-between;
     padding: 15px 0px;
 }
@@ -139,7 +139,7 @@ a {
 }
 
 .HeaderNav>nav>ul>li:nth-child(1)::before {
-    content: 'æ–°å“';
+    content: 'Ã¦â€“Â°Ã¥â€œÂ';
     width: 30px;
     height: 20px;
     background: #E71224;
@@ -176,7 +176,7 @@ a {
     padding: 25px 0px;
 }
 
-nav {
+.HeaderNav nav {
     display: flex;
     width: 500px;
 }
@@ -212,14 +212,15 @@ ul.headercloums li:hover a {
     text-decoration: underline;
 }
 
-/* å¤´éƒ¨éƒ¨åˆ†ç»“æŸ */
+/* ÃƒÂ¥Ã‚Â¤Ã‚Â´ÃƒÂ©Ã†â€™Ã‚Â¨ÃƒÂ©Ã†â€™Ã‚Â¨ÃƒÂ¥Ã‹â€ Ã¢â‚¬Â ÃƒÂ§Ã‚Â»Ã¢â‚¬Å“ÃƒÂ¦Ã‚ÂÃ…Â¸ */
 
 
-/* ä¸»ä½“éƒ¨åˆ†å¼€å§‹ */
+/* ÃƒÂ¤Ã‚Â¸Ã‚Â»ÃƒÂ¤Ã‚Â½Ã¢â‚¬Å“ÃƒÂ©Ã†â€™Ã‚Â¨ÃƒÂ¥Ã‹â€ Ã¢â‚¬Â ÃƒÂ¥Ã‚Â¼Ã¢â€šÂ¬ÃƒÂ¥Ã‚Â§Ã¢â‚¬Â¹ */
 .mainContainer {
     display: block;
-    width: 85%;
+    max-width: 1280px;
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 .root span a {
@@ -306,21 +307,92 @@ ul.headercloums li:hover a {
 }
 
 .twoBox .oneBoxBtn {
-    margin: 250px;
+    margin: 210px;
 }
 
 .Boxheader p {
     font-size: 18px;
 }
 
-/* .lunboçš„åˆ†é¡µå™¨ */
 .swiper-container {
     --swiper-theme-color: #ff6600;
     --swiper-pagination-color: #00ff33;
-    /* ä¸¤ç§éƒ½å¯ä»¥ */
 }
 .swiper-container{
-    --swiper-theme-color: #ff6600;/* 设置Swiper风格 */
-    --swiper-navigation-color: #00ff33;/* 单独设置按钮颜色 */
-    --swiper-navigation-size: 30px;/* 设置按钮大小 */
-  }
+    --swiper-theme-color: #ff6600;
+    --swiper-navigation-color: #00ff33;
+    --swiper-navigation-size: 30px;
+}
+.sideflex {
+    display: flex;
+}
+
+.blockNav {flex: 1 1 auto;}
+
+.sideNav {
+    flex: 1 0 245px;
+    padding: 20px 0px 20px 0px;
+    background: #0078d4;
+    margin-right: 40px;
+}
+
+.sideNav nav {
+    height: 100%;
+}
+
+.sideNav nav li {
+    text-align: center;
+    margin: 15px 0px;
+    color: #fff;
+}
+
+.sideNav nav li span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sideNav nav li a {
+    color: #fff;
+}
+
+.blockNav ul {
+    display: flex;
+    height: 100%;
+}
+
+.blockNav ul li {
+    flex: 1;
+    padding: 0px 10px;
+}
+
+.blockNav li figcaption img {
+    width: 100%;
+}
+
+.blockNav li figcaption p {
+    font-size: 16px;
+    margin: 10px 0px 0px 0px;
+    color: #666;
+}
+.blockNav li figcaption p:nth-child(3){
+    margin-top:0px;
+}
+
+.priceWrap {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.priceWrap span.price {
+    color: #ec5411;
+    font-size: 18px;
+}
+
+.priceWrap span a {
+    color: #ec5411;
+}
+
+.blockNav nav {
+    height: 100%;
+}
